@@ -80,7 +80,7 @@ function display_card(){
           <img src="${food1.all_food[i].f_url}" alt="Healthy Food">
           <div class="card-content">
             <div class="card-header">
-              <h3>${food1.all_food[i].f_name}</h3>
+              <h3 class="title_h3">${food1.all_food[i].f_name}</h3>
               <span class="discount-badge">${food1.all_food[i].f_dis} OFF</span>
             </div>
             <p class="description">${food1.all_food[i].f_des}</p>
