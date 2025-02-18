@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Menu Creator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Food Menu Creator</h1>
+        <p class="subtitle">Add and manage your food items</p>
+      </header>
+
+      <form class="food-form">
+        <div class="form-grid">
+          <input type="text" placeholder="Food Name" id="food_name" required>
+          <input type="number" placeholder="Price" id="food_price" min="0" step="0.01" required>
+          <input type="text" placeholder="Image URL" id="food_url" required>
+          <input type="number" placeholder="Discount %" id="food_discount" min="0" max="100" required>
+          <textarea placeholder="Description" id="food_description"  required class="span-2"></textarea>
+          <select id="select_food">
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Non Vegetarian">Non Vegetarian</option>
+          </select>
+        </div>
+        <button type="submit" id="btn_1">Add Food Item</button>
+      </form>
+      <div class="search-filter">
+        <div class="search-container">
+          <input type="text" placeholder="Search foods..." class="search-input" id="search_bar">
+        </div>
+        <div class="filter-container">
+          <select class="filter-select">
+              <option value="Non Vegetarian">Sort by Non Vegetarian</option>
+              <option value="Vegetarian">Sort by Vegetarian</option>
+          </select>
+      </div>
+      
+      </div>
+
+      <div class="food-grid">
+        <!-- Example Card -->
+
+
+     
+        
+        <!-- <div class="food-card">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Healthy Food">
+          <div class="card-content">
+            <div class="card-header">
+              <h3>Vegetable Salad</h3>
+              <span class="discount-badge">20% OFF</span>
+            </div>
+            <p class="description">Fresh and healthy vegetable salad with olive oil dressing.</p>
+            <div class="card-footer">
+              <span class="price">$12.99</span>
+              <button class="order-btn">Order Now</button>
+            </div>
+          </div>
+        </div> -->
+
+
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
